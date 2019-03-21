@@ -1,5 +1,6 @@
 package com.ceiba.api.controller;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class PersonController {
 
 	@RequestMapping
 	public List<Person> get() {
-		System.out.println("spring boot");
-		return Arrays.asList(new Person("juan esteban", "castano rincon"),new Person("juan esteban", "castro gallego"));
+		System.out.println("spring boot persons controller " + LocalDateTime.now());
+		return Arrays.asList(new Person("juan 1", "castano rincon"),new Person("juan 2", "castano rincon"));
 	}
 }
